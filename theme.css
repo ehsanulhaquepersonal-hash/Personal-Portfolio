@@ -197,4 +197,21 @@ details[open] .closed-label { display:none; }
 .full-story li { margin-bottom:10px; color:#555; line-height:1.8; }
 .full-story ul { padding-left:20px; }
 @media(max-width:760px) { .work-cards { grid-template-columns:1fr; } .work-card { padding:24px; } }
+/* Final alignment and compact contact controls. */
+.portrait-caption { width:100%; margin-left:0; margin-top:0; box-sizing:border-box; border-left:0; border-radius:0 0 10px 10px; }
+.portrait-frame { border-radius:50% 50% 0 0; }
+.hero .actions { align-items:center; gap:16px; flex-wrap:wrap; }
+.hero .actions > a { min-height:46px; padding:11px 20px; margin:0; line-height:22px; border:1px solid #777; }
+.hero .actions .hero-talk { background:transparent; }
+.zonhack-section .wrap { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:0 40px; align-items:start; }
+.zonhack-section .wrap > div { display:contents; }
+.zonhack-section .section-label { grid-column:1 / -1; margin-bottom:20px; }
+.zonhack-section h2 { grid-column:1; grid-row:2; display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin:0; }
+.zonhack-section .zonhack-logo { width:236px; height:auto; margin:0; }
+.zonhack-section .wrap > .button { grid-column:2; grid-row:2; align-self:center; }
+.zonhack-section p { grid-column:1 / -1; margin-top:24px; }
+.contact-button-grid { display:grid; grid-template-columns:max-content max-content; gap:12px; justify-content:start; }
+#contact-action .contact-button-grid > .button { padding:9px 14px; font-size:14px; font-weight:600; min-height:40px; margin:0; gap:5px; }
+@media(max-width:720px) { .zonhack-section .wrap { grid-template-columns:1fr; gap:20px; } .zonhack-section .section-label { margin:0; } .zonhack-section .wrap > .button { grid-column:1; grid-row:3; justify-self:start; } .zonhack-section p { grid-row:4; margin:0; } }
+@media(max-width:380px) { #contact-action .contact-button-grid > .button { font-size:12px; padding:8px 10px; } .contact-button-grid { gap:8px; } }
 
