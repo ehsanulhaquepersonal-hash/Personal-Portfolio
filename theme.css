@@ -143,4 +143,35 @@ footer > span, footer > a:last-child { color: #b6b6b6; }
 .contact-links a { color:#e4e4e4; text-decoration:underline; text-underline-offset:4px; font-size:16px; }
 .contact-links a:hover { color:white; }
 .whatsapp-links { display:flex; flex-wrap:wrap; gap:8px; color:#aaa; }
+/* Clear button affordances and dedicated long-form stories. */
+a:not(.skip), button.button { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:1px solid #777; border-radius:28px; padding:11px 18px; text-decoration:none; font-size:14px; font-weight:650; line-height:1.5; cursor:pointer; }
+a.wordmark { font-size:34px; font-weight:800; }
+nav { flex-wrap:wrap; gap:8px; }
+.hero-socials { flex-wrap:wrap; gap:12px; }
+.hero .scroll-cue { position:relative; margin:20px 4%; }
+.button, button.button { background:#4e4e4e; color:#fff; font-family:inherit; }
+a:hover, button.button:hover { background:#666; color:#fff; }
+a:focus-visible,button:focus-visible { outline:3px solid #999; outline-offset:4px; }
+.hero h1 span { color:#a3a3a3; }
+.zonhack-logo { display:inline-block; width:236px; height:auto; vertical-align:middle; margin:12px 0; }
+.contact-links a { text-decoration:none; color:white; }
+.contact-grid h2 { font-size:clamp(30px,3.4vw,46px); line-height:1.2; }
+dialog { border:1px solid #777; border-radius:16px; padding:32px; width:min(520px,90vw); background:#f8f8f8; color:#222; }
+dialog::backdrop { background:#0009; }
+.contact dialog p { color:#555; }
+.email-options { display:flex; flex-direction:column; gap:12px; margin-top:24px; }
+.case-page h1 { font-size:clamp(36px,5vw,66px); line-height:1.12; max-width:900px; margin:20px 0; }
+.case-page .section-label strong { display:block; font-size:28px; letter-spacing:0; margin-top:15px; }
+.case-intro { max-width:720px; }
+.category-nav { display:flex; flex-wrap:wrap; margin:36px 0 60px; gap:10px; }
+.category-nav .button { font-size:14px; }
+.case-story { border-top:1px solid #ccc; padding:54px 0; scroll-margin-top:25px; }
+.case-story h2 { max-width:850px; margin:14px 0 30px; }
+.case-story h3 { font-size:20px; margin:24px 0 12px; }
+.case-story p,.case-story li { font-size:16px; line-height:1.85; color:#505050; }
+.case-story ul { padding-left:22px; }
+.case-story li { margin:0 0 12px; }
+.story-columns { display:grid; grid-template-columns:1.2fr 1fr; gap:50px; margin-bottom:28px; }
+@media(max-width:900px) { header { flex-wrap:wrap; gap:15px; } header nav { display:flex; width:100%; flex-wrap:wrap; } header nav a { padding:8px 12px; } }
+@media(max-width:720px) { .story-columns { grid-template-columns:1fr; gap:8px; } .category-nav { display:flex; } .contact-grid { grid-template-columns:1fr; gap:25px; } .zonhack-logo { max-width:100%; } }
 
