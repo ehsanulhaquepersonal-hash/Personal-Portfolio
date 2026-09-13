@@ -174,4 +174,27 @@ dialog::backdrop { background:#0009; }
 .story-columns { display:grid; grid-template-columns:1.2fr 1fr; gap:50px; margin-bottom:28px; }
 @media(max-width:900px) { header { flex-wrap:wrap; gap:15px; } header nav { display:flex; width:100%; flex-wrap:wrap; } header nav a { padding:8px 12px; } }
 @media(max-width:720px) { .story-columns { grid-template-columns:1fr; gap:8px; } .category-nav { display:flex; } .contact-grid { grid-template-columns:1fr; gap:25px; } .zonhack-logo { max-width:100%; } }
+.journey-copy { max-width:1020px; margin:25px 0 32px; }
+.journey-copy p { font-size:17px; line-height:2; margin-bottom:22px; }
+a.journey-link { display:inline; padding:3px 9px; border-radius:7px; font-size:inherit; font-weight:700; background:#e8e8e8; color:#333; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+a.journey-link:hover { background:#444; color:white; }
+.work-name { display:block; font-size:32px; font-weight:800; margin:18px 0; }
+.work-page h1 { font-size:clamp(34px,4.6vw,60px); line-height:1.15; }
+.work-intro { max-width:820px; font-size:17px; line-height:1.8; margin-bottom:42px; }
+.work-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; margin-bottom:36px; }
+.work-card { padding:30px; background:#f8f8f8; border:1px solid #ddd; border-radius:12px; scroll-margin-top:24px; }
+.work-card h2 { font-size:28px; line-height:1.25; margin-bottom:18px; }
+.work-card p { font-size:16px; line-height:1.8; }
+.work-card summary { display:inline-flex; border-radius:28px; padding:10px 18px; background:#4e4e4e; color:white; cursor:pointer; font-weight:650; list-style:none; }
+.work-card summary::-webkit-details-marker { display:none; }
+.work-card summary:hover { background:#333; }
+.open-label { display:none; }
+details[open] .open-label { display:inline; }
+details[open] .closed-label { display:none; }
+.full-story { margin-top:26px; border-top:1px solid #ddd; }
+.full-story h3 { margin:24px 0 12px; font-size:20px; }
+.full-story .story-columns { display:block; }
+.full-story li { margin-bottom:10px; color:#555; line-height:1.8; }
+.full-story ul { padding-left:20px; }
+@media(max-width:760px) { .work-cards { grid-template-columns:1fr; } .work-card { padding:24px; } }
 
