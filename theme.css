@@ -217,4 +217,7 @@ details[open] .closed-label { display:none; }
 /* One clean silhouette for the portrait and its caption. */
 .portrait-stage .portrait-frame { box-shadow:none; width:100%; margin:0; }
 .portrait-stage .portrait-caption { box-shadow:none; width:100%; margin:0; }
+/* Align the Amazon wordmark optically with the other marketplace names. */
+.market-strip .logo-item.amazon img { transform:translateY(8px); }
+@media(max-width:720px) { .market-strip .logo-item.amazon img { transform:translateY(6px); } }
 
