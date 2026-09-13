@@ -214,4 +214,7 @@ details[open] .closed-label { display:none; }
 #contact-action .contact-button-grid > .button { padding:9px 14px; font-size:14px; font-weight:600; min-height:40px; margin:0; gap:5px; }
 @media(max-width:720px) { .zonhack-section .wrap { grid-template-columns:1fr; gap:20px; } .zonhack-section .section-label { margin:0; } .zonhack-section .wrap > .button { grid-column:1; grid-row:3; justify-self:start; } .zonhack-section p { grid-row:4; margin:0; } }
 @media(max-width:380px) { #contact-action .contact-button-grid > .button { font-size:12px; padding:8px 10px; } .contact-button-grid { gap:8px; } }
+/* One clean silhouette for the portrait and its caption. */
+.portrait-stage .portrait-frame { box-shadow:none; width:100%; margin:0; }
+.portrait-stage .portrait-caption { box-shadow:none; width:100%; margin:0; }
 
